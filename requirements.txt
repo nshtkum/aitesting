@@ -8,4 +8,5 @@ pandas
 numpy
 langchain
 langchain-google-vertexai
-git+https://github.com/langchain-ai/langchain.git@master#subdirectory=libs/experimental
+# Manual install required for SemanticChunker
+# run: pip install "git+https://github.com/langchain-ai/langchain.git@master#subdirectory=libs/experimental"
