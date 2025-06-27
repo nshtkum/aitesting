@@ -3,8 +3,9 @@ PyMuPDF
 sentence-transformers
 scikit-learn
 tiktoken
-langchain
-langchain-google-vertexai
 openai
 pandas
 numpy
+langchain
+langchain-google-vertexai
+git+https://github.com/langchain-ai/langchain.git@master#subdirectory=libs/experimental
