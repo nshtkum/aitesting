@@ -92,7 +92,7 @@ if st.button("🔍 Check Intent Alignment"):
 
     if uploaded_files:
         for file in uploaded_files:
-            doc = fitz.open(file)
+            doc = fitz.open(stream=file.read(), filetype="pdf")
             text = " ".join([page.get_text() for page in doc])
             docs.append((file.name, text))
     elif pasted_text:
