@@ -1,0 +1,10 @@
+streamlit
+PyMuPDF
+sentence-transformers
+scikit-learn
+tiktoken
+langchain
+langchain-google-vertexai
+openai
+pandas
+numpy
