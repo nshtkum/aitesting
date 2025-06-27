@@ -37,7 +37,9 @@ def embed_local(texts):
 def embed_openai(texts):
     import openai
     openai.api_key = openai_key
-    return np.array([openai.Embedding.create(input=[t], model="text-embedding-3-small")['data'][0]['embedding'] for t in texts])
+    from openai import OpenAI
+    client = OpenAI(api_key=openai_key)
+    return np.array([client.embeddings.create(input=t, model="text-embedding-3-small").data[0].embedding for t in texts])
 
 def embed_vertex(texts):
     import vertexai
